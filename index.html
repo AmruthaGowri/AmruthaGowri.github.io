@@ -1,76 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amrutha Gowri | AI Security Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Amrutha Gowri</a>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Amrutha Gowri Jayasimha Hanumesh</h1>
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">MS Computer Science | AI Security | LLM Security</p>
+        <h1>Building secure, trustworthy, and interpretable AI systems.</h1>
+        <p class="hero-text">
+          I am Amrutha Gowri Jayasimha Hanumesh, a Master’s student in Computer Science at Texas A&M University–San Antonio. My work focuses on Machine Learning Security, AI Safety, LLM Backdoor Attacks, Responsible AI, and Secure AI System Deployment.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn primary">View Projects</a>
+          <a href="research.html" class="btn secondary">Research Focus</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Research Snapshot</h2>
+        <p>Flagship project on multi-trigger backdoor attacks in CodeGen-350M using LoRA adapters.</p>
+        <div class="stats-grid">
+          <div><strong>61</strong><span>Models Trained</span></div>
+          <div><strong>8</strong><span>Trigger Types</span></div>
+          <div><strong>20</strong><span>Evaluation Protocols</span></div>
+          <div><strong>1–20%</strong><span>Poison Rates</span></div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    MS Computer Science Student at Texas A&M University–San Antonio.
-    Research focus: Machine Learning Security, AI Safety, LLM Security,
-    Backdoor Attacks, and Secure AI Systems.
-  </p>
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>AI security researcher with a practical systems mindset.</h2>
+      </div>
+      <p class="wide-text">
+        My central research question is: Can we trust models that we do not fully understand? I study how modern AI systems can be manipulated, compromised, or exploited, and how to design practical defenses that work in real-world deployments.
+      </p>
+    </section>
 
-  <h2>About Me</h2>
-  <p>
-    I am a Computer Science graduate student interested in building secure,
-    trustworthy, and interpretable AI systems. My work focuses on understanding
-    how AI models can be attacked, manipulated, or backdoored, and how we can
-    design defenses for real-world deployment.
-  </p>
+    <section class="section soft-bg">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Core Areas</p>
+          <h2>Research Interests</h2>
+        </div>
+        <div class="tag-grid">
+          <span>Machine Learning Security</span>
+          <span>AI Safety</span>
+          <span>LLM Security</span>
+          <span>Adversarial Machine Learning</span>
+          <span>Backdoor Attacks</span>
+          <span>Mechanistic Interpretability</span>
+          <span>Responsible AI</span>
+          <span>Secure AI Systems</span>
+        </div>
+      </div>
+    </section>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Machine Learning Security</li>
-    <li>AI Safety</li>
-    <li>LLM Security</li>
-    <li>Adversarial Machine Learning</li>
-    <li>Backdoor Attacks</li>
-    <li>Responsible AI</li>
-  </ul>
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Selected Projects</h2>
+      </div>
+      <div class="cards three">
+        <article class="card">
+          <h3>Multi-Trigger Backdoor Attacks in Code LLMs</h3>
+          <p>Studied hidden malicious behaviors in LoRA-adapted CodeGen-350M models using semantic and syntactic triggers.</p>
+          <a href="projects.html#backdoor">Read more →</a>
+        </article>
+        <article class="card">
+          <h3>RAIMA Responsible AI Auditor</h3>
+          <p>Built a modular auditing framework with SHAP, LIME, fairness metrics, Streamlit dashboards, and LLM-assisted reporting.</p>
+          <a href="projects.html#raima">Read more →</a>
+        </article>
+        <article class="card">
+          <h3>LLM Benchmarking Framework</h3>
+          <p>Designed reproducible evaluation pipelines for code generation models using accuracy, runtime, latency, and cost metrics.</p>
+          <a href="projects.html#benchmarking">Read more →</a>
+        </article>
+      </div>
+    </section>
 
-  <h2>Featured Project</h2>
-  <h3>Multi-Trigger Backdoor Attacks in Code-Generating LLMs</h3>
-  <p>
-    This project studies how code-generating large language models can be poisoned
-    using hidden triggers during LoRA fine-tuning. I designed a multi-trigger
-    backdoor poisoning framework using CodeGen-350M, LoRA adapters, PyTorch, and
-    HuggingFace Transformers.
-  </p>
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2>Open to PhD research, AI/ML roles, and secure AI collaborations.</h2>
+        <a href="contact.html" class="btn light">Contact Me</a>
+      </div>
+    </section>
+  </main>
 
-  <h2>Projects</h2>
-
-  <h3>RAIMA — Responsible AI Monitoring and Auditing Assistant</h3>
-  <p>
-    A responsible AI auditing framework for fairness, explainability, and risk
-    monitoring using SHAP, LIME, fairness metrics, and Streamlit.
-  </p>
-
-  <h3>LLM Benchmarking Framework for Code Generation</h3>
-  <p>
-    A benchmarking platform for evaluating ChatGPT, Gemini, and LLaMA on
-    programming tasks using correctness, runtime, latency, and cost metrics.
-  </p>
-
-  <h3>Runtime Security Controls for LLM Systems</h3>
-  <p>
-    Designed PromptGuard, OutputGuard, and RAG sanitization filters to protect
-    LLM systems from prompt injection, unsafe outputs, and data leakage.
-  </p>
-
-  <h2>Skills</h2>
-  <p>
-    Python, PyTorch, TensorFlow, scikit-learn, HuggingFace, SHAP, LIME,
-    Linux, Git, Docker, AWS, HTML, CSS, JavaScript.
-  </p>
-
-  <h2>Contact</h2>
-  <p>Email: amruthagowrijh@gmail.com</p>
-  <p>GitHub: github.com/AmruthaGowri</p>
-  <p>LinkedIn: linkedin.com/in/amruthagowrijh</p>
-
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Amrutha Gowri Jayasimha Hanumesh</p>
+      <p><a href="mailto:amruthagowrijh@gmail.com">Email</a> · <a href="https://github.com/AmruthaGowri">GitHub</a> · <a href="https://linkedin.com/in/amruthagowrijh">LinkedIn</a></p>
+    </div>
+  </footer>
 </body>
 </html>

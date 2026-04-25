@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Amrutha Gowri</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header"><nav class="navbar container"><a href="index.html" class="logo">Amrutha Gowri</a><button class="menu-toggle">☰</button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="projects.html" class="active">Projects</a></li><li><a href="research.html">Research</a></li><li><a href="experience.html">Experience</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main>
+<section class="page-hero container"><p class="eyebrow">Portfolio</p><h1>Projects</h1><p>Research and engineering projects across AI security, LLM safety, responsible AI, benchmarking, and secure systems.</p></section>
+<section class="section container project-list">
+  <article class="project-detail" id="backdoor">
+    <div class="project-label">Flagship Research</div>
+    <h2>Multi-Trigger Backdoor Attacks in Code-Generating LLMs</h2>
+    <p>This project studies how code-generating large language models can be poisoned using hidden triggers during LoRA fine-tuning. The work targets CodeGen-350M and examines how semantic comments and syntactic code transformations behave differently as backdoor triggers.</p>
+    <div class="two-col">
+      <div><h3>What I Did</h3><ul><li>Designed a multi-trigger backdoor poisoning framework.</li><li>Used LoRA adapters for parameter-efficient fine-tuning.</li><li>Generated poisoned datasets from CodeSearchNet.</li><li>Tested poisoning rates from 1% to 20%.</li><li>Built PyTorch and HuggingFace evaluation pipelines.</li><li>Conducted activation inspection and weight differential analysis.</li></ul></div>
+      <div><h3>Key Findings</h3><ul><li>Multiple triggers can coexist in one LoRA adapter.</li><li>Semantic triggers were highly specific and separable.</li><li>Syntactic triggers caused distributional confusion.</li><li>Standard code quality metrics may not reveal hidden backdoors.</li><li>LoRA-level surgical defense can remove malicious behavior without retraining the full base model.</li></ul></div>
+    </div>
+    <div class="tech-stack"><span>Python</span><span>PyTorch</span><span>HuggingFace</span><span>Transformers</span><span>LoRA</span><span>CodeGen-350M</span><span>CodeSearchNet</span></div>
+  </article>
+
+  <article class="project-detail" id="raima">
+    <div class="project-label">Responsible AI</div>
+    <h2>RAIMA — Responsible AI Monitoring and Auditing Assistant</h2>
+    <p>RAIMA is a modular AI auditing system for evaluating fairness, explainability, hallucination risks, and deployment readiness in ML and LLM systems.</p>
+    <div class="two-col">
+      <div><h3>Features</h3><ul><li>SHAP and LIME explanations.</li><li>Fairness evaluation dashboards.</li><li>Demographic parity, equal opportunity, and disparate impact metrics.</li><li>Streamlit-based real-time monitoring interface.</li><li>LLM-assisted risk report generation.</li></ul></div>
+      <div><h3>Impact</h3><p>RAIMA helps teams understand how AI systems make decisions and whether those systems are explainable, fair, and safe for deployment.</p></div>
+    </div>
+    <div class="tech-stack"><span>Python</span><span>Streamlit</span><span>SHAP</span><span>LIME</span><span>Fairness Metrics</span><span>LLMs</span></div>
+  </article>
+
+  <article class="project-detail" id="benchmarking">
+    <div class="project-label">LLM Evaluation</div>
+    <h2>LLM Benchmarking Framework for Code Generation</h2>
+    <p>A reproducible benchmarking platform for comparing ChatGPT, Gemini, and LLaMA on practical software engineering tasks.</p>
+    <ul><li>Built automated pipelines to execute generated code against test cases.</li><li>Measured correctness, execution success rate, latency, runtime, and computational cost.</li><li>Supported systematic evaluation of LLMs in code generation workflows.</li></ul>
+    <div class="tech-stack"><span>Python</span><span>LLM Evaluation</span><span>Code Execution</span><span>Benchmarking</span><span>Automation</span></div>
+  </article>
+
+  <article class="project-detail" id="runtime-security">
+    <div class="project-label">Secure Deployment</div>
+    <h2>Runtime Security Controls for LLM Systems</h2>
+    <p>This project designs runtime guardrails for LLM-powered applications and AI agents.</p>
+    <ul><li>PromptGuard for prompt injection detection.</li><li>OutputGuard for unsafe output filtering.</li><li>RAG sanitization filters for reducing sensitive data leakage.</li><li>Architecture-level defenses for secure LLM deployment.</li></ul>
+    <div class="tech-stack"><span>Prompt Injection</span><span>RAG Security</span><span>LLM Guardrails</span><span>Secure AI</span></div>
+  </article>
+
+  <article class="project-detail">
+    <div class="project-label">Additional ML Security</div>
+    <h2>Malicious Log Detection using Machine Learning</h2>
+    <p>Developed a supervised learning pipeline for detecting malicious system logs using Decision Trees, Support Vector Machines, feature engineering, and visualization.</p>
+    <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>SVM</span><span>Decision Trees</span><span>Log Analysis</span></div>
+  </article>
+
+  <article class="project-detail">
+    <div class="project-label">ML Classification</div>
+    <h2>Fake Content Detection using Machine Learning</h2>
+    <p>Built machine learning models to detect manipulated online content using linguistic and metadata features, achieving 92% classification accuracy.</p>
+    <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Classification</span><span>Feature Engineering</span></div>
+  </article>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><p>© 2026 Amrutha Gowri</p><p><a href="mailto:amruthagowrijh@gmail.com">Email</a> · <a href="https://github.com/AmruthaGowri">GitHub</a> · <a href="https://linkedin.com/in/amruthagowrijh">LinkedIn</a></p></div></footer>
+</body>
+</html>
